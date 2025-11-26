@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *print_format - search for the correct function to execute
+ * print_format - search for the correct function to execute
  * @format : character to check for the corresponding format
  * Return: pointer to the associated function, or NULL if not found
  */
