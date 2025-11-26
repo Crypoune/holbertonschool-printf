@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#include <stdio.h>
 #include <stdarg.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -20,13 +21,6 @@ typedef struct type_format
 	int		(*f)(va_list a);
 } f_t;
 
-/**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
 int _putchar(char c);
 int _printf(const char *format, ...);
 int	(*print_format(const char *format))(va_list);
