@@ -13,5 +13,6 @@ In our project, we aim to implement a custom version of this function by handlin
 
 ## Authors
 
-[Arnaud Messenet](https://github.com/Crypoune)
-[David Dufont](https://github.com/dufontdd)
+[@Arnaud Messenet](https://github.com/Crypoune)
+
+[@David Dufont](https://github.com/dufontdd)
