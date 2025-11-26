@@ -1,0 +1,19 @@
+.TH _PRINTF 3 "2025-11-26" "David.D Arnaud.M" "User command"
+.SH NAME
+	_printf - format and print data
+.SH SYNOPSIS
+#include "main.h"
+
+int _printf(const char *format, ...);
+.SH DESCRIPTION
+_printf print according to the format you want use("%c","%s", "%%", "%i","%d")
+
+.SH SPECIFIERS
+
+"%c" print a character
+"%s" print a stings
+"%%" print a percent
+"%d" print a decimal
+
+.SH RETURN VALUE
+Return the nuber of printed character
