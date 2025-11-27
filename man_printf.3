@@ -58,29 +58,29 @@ Here are some examples using _printf:
 .TP
 Print a single character:
 .B
-_printf("%c\n", 'A');
+_printf("%c", 'A');
 
 .TP
 Print a string:
 .B
-_printf("%s\n", "Hello, world!");
+_printf("%s", "Hello, world!");
 
 .TP
 Print a percent sign:
 .B
-_printf("%%\n");
+_printf("%%");
 
 .TP
 Print integers:
 .B
-_printf("%d\n", 123);
+_printf("%d", 123);
 .br
-_printf("%i\n", -456);
+_printf("%i", -456);
 
 .TP
 Mix multiple specifiers:
 .B
-_printf("Name: %s, Age: %d, Grade: %c\n", "Alice", 20, 'A');
+_printf("Name: %s, Age: %d, Grade: %c", "Alice", 20, 'A');
 
 .SH RETURN VALUE
 Return the number of printed character (excluding null byte).
