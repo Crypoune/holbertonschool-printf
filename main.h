@@ -13,12 +13,12 @@
  * and their associated functions
  *
  * @e: The format specifier (e.g., 'c', 's', '%')
- * @f: The function associated with the specifier
+ * @box: The function associated with the specifier
  */
 typedef struct type_format
 {
 	char	e;
-	int		(*f)(va_list a);
+	int		(*box)(va_list a);
 } f_t;
 
 int _putchar(char c);
