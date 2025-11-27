@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#include <stdio.h>
 #include <stdarg.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -12,21 +13,14 @@
  * and their associated functions
  *
  * @e: The format specifier (e.g., 'c', 's', '%')
- * @f: The function associated with the specifier
+ * @box: The function associated with the specifier
  */
 typedef struct type_format
 {
 	char	e;
-	int		(*f)(va_list a);
+	int		(*box)(va_list a);
 } f_t;
 
-/**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
 int _putchar(char c);
 int _printf(const char *format, ...);
 int	(*print_format(const char *format))(va_list);
