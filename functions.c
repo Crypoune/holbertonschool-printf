@@ -16,7 +16,7 @@ int	print_char(va_list args)
 
 /**
  * print_string - function that print a string
- * @args : argument list
+ * @args: argument list
  * Return: the length of the string
  */
 int	print_string(va_list args)
@@ -38,7 +38,7 @@ int	print_string(va_list args)
  * print_integer - function that print digit (d or i)
  * @args: argument list
  *
- * Return: number of charcacter printed
+ * Return: number of character printed
  */
 int print_integer(va_list args)
 {
@@ -71,7 +71,7 @@ int print_integer(va_list args)
 
 /**
  * print_percent - function that print character '%'
- * @args : arguments list
+ * @args: arguments list
  * Return: character '%'
 */
 int	print_percent(va_list args)
