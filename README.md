@@ -1,26 +1,57 @@
-# _printf (Custom printf) — holbertonschool-printf
-
-Brief, educational re-implementation of the standard C `printf` function. The goal is to learn how `printf` works internally by implementing a subset of its features and supporting several common format specifiers.
+# C - Group \_printf project
 
 ---
 
 ## Table of contents
 
-- About
+- Description
+- Flowchart
+- Command Compilation
+- Requirements
+- Authorized functions and macros
 - Features (supported specifiers)
 - Files in this repo
-- Build & compile
 - Usage examples
 - Contributing & style
 - Authors
 
 ---
 
-## About
+## Description
 
-This project implements a custom `_printf` function intended to behave similarly to the standard `printf` for a subset of format specifiers. It demonstrates handling variable argument lists (`stdarg.h`), parsing format strings, and writing to standard output.
+Our goal is to create our own `_printf` function, working as a duo, that replicates the behavior of the original `printf` function. In C, `printf()` is used to display formatted output on the standard output (`stdout`). It is part of the C standard library `<stdio.h>` and allows developers to format text in many different ways using format specifiers (such as `%d`, `%s`, `%c`, etc.).
+In our project, we aim to implement a custom version of this function by handling various format specifiers, managing variable arguments, and ensuring behavior as close as possible to the real printf. This will help us deepen our understanding of formatting, memory management, and the inner workings of standard library functions.
 
-The implementation is small and intended for learning — not a production replacement for the standard library `printf`.
+---
+
+## Flowchart
+
+![Flowchart](flowchart.png)
+
+---
+
+## Command Compilation
+
+`$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c`
+
+---
+
+## Requirements
+
+- Follow the Holberton/Betty style rules where required.
+- Avoid the use of global variables.
+- Restrict the number of functions in a file to no more than 5.
+- Include the prototypes of all functions in your header file, named main.h.
+
+---
+
+## Authorized functions and macros
+
+- write (man 2 write)
+- va_start (man 3 va_start)
+- va_end (man 3 va_end)
+- va_copy (man 3 va_copy)
+- va_arg (man 3 va_arg)
 
 ---
 
@@ -45,19 +76,6 @@ These are implemented by functions located in `functions.c` (for example `print_
 - `print_format.c` — format-parsing and helper functions
 - `main.c` — example / test harness (may contain sample usage)
 - `main.h` — project header with prototypes and includes
-- `test/` — tests or test scaffolding
-
----
-
-## Build & compile
-
-Use the same flags used in the Holberton project environment (GNU89 standard and strict warning flags):
-
-```bash
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c -o _printf_test
-```
-
-That will produce an executable called `_printf_test` if `main.c` is present and used as a test harness.
 
 ---
 
@@ -87,19 +105,8 @@ Advice: run your compiled binary (for example `./_printf_test`) to exercise the 
 
 ---
 
-## Contributing & style
-
-- Follow the Holberton/Betty style rules where required.
-- Keep files small (<= 5 functions per file) and avoid global variables.
-- Use the allowed functions and macros only: `write`, `malloc`, `free`, and `stdarg` helpers (`va_start`, `va_end`, `va_copy`, `va_arg`).
-
----
-
 ## Authors
 
-- Arnaud Messenet — https://github.com/Crypoune
-- David Dufont — https://github.com/dufontdd
+[@Arnaud Messenet](https://github.com/Crypoune)
 
----
-
-If you'd like the README to include more details (design decisions, tests, or sample outputs for edge cases) tell me which parts you want expanded and I’ll add them next. ✅
+[@David Dufont](https://github.com/dufontdd)
