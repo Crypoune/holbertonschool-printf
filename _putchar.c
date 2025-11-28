@@ -9,6 +9,5 @@
  */
 int _putchar(char c)
 {
-	// Écris (affiche le 1er caractère, stocké à l'adresse de c, affiche 1 seul caractère)
 	return (write(1, &c, 1));
 }
