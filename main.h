@@ -18,7 +18,7 @@
 typedef struct type_format
 {
 	char	e;
-	int		(*box)(va_list a);
+	int		(*box)(va_list);
 } f_t;
 
 int _putchar(char c);
