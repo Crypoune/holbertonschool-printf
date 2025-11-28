@@ -86,19 +86,19 @@ Assuming you've compiled the repository into an executable or are linking `_prin
 Example C usage (from `main.c` or your test program):
 
 ```c
-_printf("Hello %s!\n", "world");
-_printf("Character: %c\n", 'A');
-_printf("Integer: %d %i\n", 42, -15);
-_printf("Percent sign: %%\n");
+_printf("Length:[%d, %i]\n", len, len);
+_printf("Negative:[%d]\n", -762534);
+_printf("Character:[%c]\n", 'H');
+_printf("String:[%s]\n", "I am a string !");
 ```
 
 Expected output:
 
 ```
-Hello world!
-Character: A
-Integer: 42 -15
-Percent sign: %
+Length:[39, 39]
+Negative:[-762534]
+Character:[H]
+String:[I am a string !]
 ```
 
 Advice: run your compiled binary (for example `./_printf_test`) to exercise the examples or make your own `main.c` that calls `_printf`.
