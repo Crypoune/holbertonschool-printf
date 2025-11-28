@@ -22,8 +22,14 @@ int	_printf(const char *format, ...)
 
 	while (format[i])
 	{
-		if (format[i] == '%' && format[i + 1])
+		if (format[i] == '%')
 		{
+			if (format[i + 1] == '\0')
+			{
+				va_end(args);
+				return (-1);
+			}
+
 			box = print_format(&format[i + 1]);
 
 			if (box == NULL)
@@ -33,14 +39,14 @@ int	_printf(const char *format, ...)
 			}
 			else
 				length += box(args);
-			i++;
+
+			i += 2;
+			continue;
 		}
-		else
-		{
-			length += _putchar(format[i]);
-		}
+		length += _putchar(format[i]);
 		i++;
 	}
+
 	va_end(args);
 	return (length);
 }
