@@ -1,0 +1,86 @@
+.TH _PRINTF 3 "2025-11-26" "Library Function"
+
+.SH AUTHORS
+.TP
+.B "David.D Arnaud.M"
+
+.SH NAME
+.B _printf - format and print data
+
+.SH SYNOPSIS
+.B #include "main.h"
+.br
+.B int _printf(const char *format, ...);
+
+
+.SH DESCRIPTION
+_printf print output to the standard according to the format you want.
+
+The following conversion specifiers are supported:
+
+.TP
+.B %c
+(character,)
+.B %s
+(strin),
+.B %%
+(literal percent sign),
+.B %d
+(decimal number)
+.B %i
+(integer)
+
+
+.SH SPECIFIERS
+
+.TP
+.B "%c"
+print a sigle character print a character.
+
+.TP
+.B "%s"
+print a null-terminated stings.
+
+.TP
+.B "%%"
+print a percent sign.
+
+.TP
+.B "%d"
+print a decimal
+
+.TP
+.B "%i" print a integer
+
+.SH EXEMPLES
+Here are some examples using _printf:
+
+.TP
+Print a single character:
+.B
+_printf("%c", 'A');
+
+.TP
+Print a string:
+.B
+_printf("%s", "Hello, world!");
+
+.TP
+Print a percent sign:
+.B
+_printf("%%");
+
+.TP
+Print integers:
+.B
+_printf("%d", 123);
+.br
+_printf("%i", -456);
+
+.TP
+Mix multiple specifiers:
+.B
+_printf("Name: %s, Age: %d, Grade: %c", "Alice", 20, 'A');
+
+.SH RETURN VALUE
+Return the number of printed character (excluding null byte).
